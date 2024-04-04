@@ -1,3 +1,4 @@
+#[allow(clippy::vec_init_then_push)]
 pub fn example() {
     // fixed and immutable size
     let tuple: (i32, i32, i32) = (1, 2, 3);

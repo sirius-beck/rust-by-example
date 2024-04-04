@@ -24,9 +24,9 @@ pub fn example_for_array() {
     let array = [1, 2, 3, 4, 5];
 
     println!("for i in 0..array.len() {{...}}");
-    for i in 0..array.len() {
+    (0..array.len()).for_each(|i| {
         println!("  array[{}] = {}", i, array[i]);
-    }
+    });
 
     println!("\nfor value in array {{...}}");
     for value in array {

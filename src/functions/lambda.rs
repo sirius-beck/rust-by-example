@@ -15,7 +15,7 @@ pub fn example_filter() {
             }
         }
 
-        return true;
+        true
     };
 
     let numbers: Vec<i32> = (1..=10000)

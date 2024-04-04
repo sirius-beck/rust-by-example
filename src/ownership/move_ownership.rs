@@ -30,6 +30,7 @@ pub fn example_b() {
 
 /// get_new_name() returns a new String
 /// The ownership of the variable 'name' is moved to the caller
+#[allow(clippy::let_and_return)]
 fn get_new_name() -> String {
     let name = String::from("Maria");
     name

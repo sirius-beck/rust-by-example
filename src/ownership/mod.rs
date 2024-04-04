@@ -1,4 +1,4 @@
-mod r#move;
+mod move_ownership;
 mod reference;
 mod scope;
 mod slice;
@@ -31,8 +31,8 @@ pub fn execute() {
             3 => scope::example_move(),
             4 => scope::example_clone(),
             5 => scope::example_copy(),
-            6 => r#move::example_a(),
-            7 => r#move::example_b(),
+            6 => move_ownership::example_a(),
+            7 => move_ownership::example_b(),
             8 => reference::example_immutable_ref(),
             9 => reference::example_mutable_ref_a(),
             10 => reference::example_mutable_ref_b(),

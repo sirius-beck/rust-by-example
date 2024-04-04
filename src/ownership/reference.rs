@@ -62,6 +62,7 @@ pub fn example_pending_ref() {
 //     &text // returns a reference to a local variable that will be dropped
 // }
 
+#[allow(clippy::let_and_return)]
 fn no_pending() -> String {
     let text = String::from("No pending");
     text // returns the local variable itself
